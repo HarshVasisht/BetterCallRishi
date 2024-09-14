@@ -22,6 +22,20 @@
       href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
       rel="stylesheet"
     />
+    <style>
+      #particles-js {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+      }
+      .project-cs-hero__content {
+        position: relative;
+        z-index: 2;
+      }
+    </style>
   </head>
   <body>
     <header class="header">
@@ -90,6 +104,7 @@
       </div>
     </header>
     <section class="project-cs-hero">
+      <div id="particles-js"></div>
       <div class="project-cs-hero__content">
         <h1 class="heading-primary">Recipe Rating Prediction</h1>
         <div class="project-cs-hero__info">
@@ -219,6 +234,43 @@
         </div>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="../index.js"></script>
+    <script>
+      particlesJS("particles-js", {
+        particles: {
+          number: { value: 80, density: { enable: true, value_area: 800 } },
+          color: { value: "#ffffff" },
+          shape: { type: "circle" },
+          opacity: { value: 0.5, random: false },
+          size: { value: 3, random: true },
+          line_linked: {
+            enable: true,
+            distance: 150,
+            color: "#ffffff",
+            opacity: 0.4,
+            width: 1
+          },
+          move: {
+            enable: true,
+            speed: 2,
+            direction: "none",
+            random: false,
+            straight: false,
+            out_mode: "out",
+            bounce: false,
+          }
+        },
+        interactivity: {
+          detect_on: "canvas",
+          events: {
+            onhover: { enable: true, mode: "repulse" },
+            onclick: { enable: true, mode: "push" },
+            resize: true
+          },
+        },
+        retina_detect: true
+      });
+    </script>
   </body>
 </html>
