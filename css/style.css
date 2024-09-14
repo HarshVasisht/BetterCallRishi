@@ -515,14 +515,14 @@ textarea {
     color: #333;
     transition: color .3s; }
     .header__logo-container:hover {
-      color: #0062b9; }
+      color: #abcdeb; }
   .header__logo-img-cont {
     width: 5rem;
     height: 5rem;
     border-radius: 50px;
     overflow: hidden;
     margin-right: 1.5rem;
-    background: #0062b9; }
+    background: #abcdeb; }
     @media only screen and (max-width: 56.25em) {
       .header__logo-img-cont {
         width: 4.5rem;
@@ -692,6 +692,37 @@ textarea {
     opacity: 1;
     animation: wheel 1.3s infinite;
     -webkit-animation: wheel 1.3s infinite; }
+  /* Contact Form Styles */
+.contact__form-container {
+  background-color: #f5f5f5; /* Set the background color for the contact form */
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.contact__form-label {
+  color: #333; /* Label text color */
+}
+
+.contact__form-input {
+  background-color: #fff; /* Input field background color */
+  border: 1px solid #ccc; /* Input field border color */
+  color: #333; /* Input field text color */
+}
+
+.contact__form-input--message {
+  height: 150px; /* Adjust the height of the message textarea */
+}
+
+.contact__btn {
+  background-color: #007bff; /* Button background color */
+  color: #fff; /* Button text color */
+}
+
+.contact__btn:hover {
+  background-color: #0056b3; /* Button background color on hover */
+}
+
 
 @keyframes wheel {
   to {
